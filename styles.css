@@ -1,0 +1,205 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    position: sticky;
+    top: 0;
+    background: #0a9396;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Hamburger Menu */
+#hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+/* Navigation */
+#nav-menu ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+#nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#nav-menu ul li a:hover {
+    color: #94d2bd;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #005f73, #0a9396);
+    color: white;
+    text-align: center;
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 0.5rem;
+}
+
+.skills, .projects {
+    margin: 0;
+    padding: 0;
+}
+
+.skills h3, .projects .project h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.skills ul, .projects .project p {
+    margin: 0.5rem 0 0;
+    padding: 0;
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+.contact p {
+    margin: 0.5rem 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+}
+
+footer .social-links {
+    margin-top: 1rem;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Side Navigation Styles */
+.side-nav {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #2c3e50;
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+/* Side Navigation Links */
+.side-nav a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Side Navigation Links */
+.side-nav a:hover {
+    background-color: #34495e;
+}
+
+/* Close Button Styles (Positioned on the right) */
+.side-nav .close-btn {
+    font-size: 2rem;
+    color: white;
+    padding: 20px;
+    text-align: right;  /* Aligns the X button to the right */
+    cursor: pointer;
+    position: absolute;
+    top: 20px;  /* Position it 20px from the top */
+    right: 20px; /* Position it 20px from the right */
+}
+
+/* Side Navigation Open Effect */
+.side-nav.open {
+    right: 0;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    display: none; /* Hidden by default */
+    color: white; /* Change the color of the hamburger icon to white */
+}
+
+/* Show Hamburger Menu on Mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Display hamburger menu */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+    }
+}
+
+/* Section Hover Effect */
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ecf0f1;
+}
+
+/* Social Media Links Hover (Footer) */
+footer .social-links a:hover {
+    color: #3498db; /* Change social link color on hover */
+}
